@@ -9,10 +9,24 @@
     <!-- Load Font Awesome Icons (using a reliable CDN link) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <style>
-        /* Removed external padding/centering styles for embedding purposes */
+        /* 1. Essential reset to remove browser default margins/padding and prevent scrolling */
+        html, body {
+            margin: 0;
+            padding: 0;
+            /* Setting height to 100% of the viewport/iframe height */
+            height: 100%;
+            /* Prevent unwanted scrollbars */
+            overflow: hidden;
+        }
+
+        /* 2. Centering the content */
         body {
             font-family: 'Inter', sans-serif;
+            display: flex;
+            justify-content: center; /* Center horizontally */
+            align-items: center;    /* Center vertically */
         }
+
         /* Ensure links behave like buttons */
         .btn-link {
             text-decoration: none; /* Remove underline */
